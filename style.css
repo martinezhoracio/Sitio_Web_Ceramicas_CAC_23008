@@ -1,0 +1,95 @@
+/* Estilos para el formulario de contacto */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf2f8;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fcf1f1;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #e676e2;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border:none;
+    border-radius: 5px;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #efd8d8;
+    border-radius: 5px;
+}
+
+input[type="mensaje"],
+textarea {
+    width: 80%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #8b2323;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    padding: 10px;
+    background-color: #efb9dd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #f1be9c;
+}
+
+.form_and_pic{
+    /*Convierte el contenedor en una grilla */
+    display: grid;   /* display: inline-grid; */
+
+    /*Ancho de los elementos de cada columna*/
+    grid-template-columns: 40% 40%;
+
+    /*Espacios entre los elementos "hijos"*/
+    gap: 10px;
+
+    /*Coloco un espacio alrededor del contenido
+    de los elementos "hijos"*/
+    padding: 10px;
+    background-color: rgb(249, 244, 242);
+}
+
+.grid-container > div {
+    background-color: antiquewhite;
+    padding: 5px;
+
+}
+
+img.imagen_pedidos{
+    width: 500px;
+    height: 450px;
+
+}
+
