@@ -5,46 +5,127 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consultas</title>
+    <title>Pedidos</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Formulario de consultas</h1>
+    <div class="contenedor1">
 
-<p>Si necesitas resolver cualquier tipo de duda, quieres conocer mejor las características de fabricación o eres una empresa que desea contar con nuestros productos al por mayor, ponte en contacto con nosotros. Damos una solución a medida a todas tus necesidades.</p>
-<div class="form_and_pic" >
-    <div class="contenido_left"> 
-        <form id="formulario" onsubmit="return validarFormulario()" >
+        <!-- Contenido del header-->
 
+        <div class="header1">
+            <header>
+                <h1><img src="icon/Logoprincipal.png" width="200" height="200" alt="ARTE-TALLER"
+                        style="border-radius: 10px;"></h1>
+            </header>
+        </div>
 
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" value="" placeholder="Mengano*" required=""><br>
+        <!-- Contenido del panel de navegacion-->
 
-            <label for="telefono">Telefono:</label>
-            <input type="tel" id="telefono" name="telefono" value="" placeholder="11 1111 1111*" required=""><br>
+        <div class="panel1">
+            <nav role="navigation">
+                <div id="menuToggle">
+                    <input type="checkbox">
+                    <br>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <br>
+                    <ul id="menu">
+                        <a href="inicio.html">
+                            <li>Inicio</li>
+                        </a>
+                        <a href="clases.html">
+                            <li>Clases</li>
+                        </a>
+                        <a href="ceramicas.html">
+                            <li>Ceramicas</li>
+                        </a>
+                        <a href="pedidos.html">
+                            <li>Pedidos</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <!-- Contenido de las ceramicas a la venta-->
+        <div class="productos1">
+            <h1>Formulario de consultas</h1>
 
-            <label for="mail">Email:</label>
-            <input type="email" id="mail" name="mail" value="" placeholder="nombre@email.com*" required=""><br>
+            <p>Si necesitas resolver cualquier tipo de duda, quieres conocer mejor las características de fabricación o
+                eres una empresa que desea contar con nuestros productos al por mayor, ponte en contacto con nosotros.
+                Damos una solución a medida a todas tus necesidades.</p>
+        </div>
 
-            <label for="mensaje">Mensaje:</label>
-            <textarea type="mensaje" id="mensaje" name="mensaje" value="" placeholder="Mensaje*" required=""  ></textarea><br>
-            
+        <div class="productos2" style="padding: 10px;">
 
-            <input type="submit" value="Enviar">
+            <div class="form_and_pic">
+                <div class="contenido_left">
+                    <form id="formulario" onsubmit="return validarFormulario()">
 
-        </form>
-       
-
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" value="" placeholder="Mengano*" required=""><br>
+                        <br>
+                        <label for="telefono">Telefono:</label>
+                        <input type="tel" id="telefono" name="telefono" value="" placeholder="11 1111 1111*"
+                            required=""><br>
+                        <br>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="mail" value="" placeholder="nombre@email.com*"
+                            required=""><br>
+                        <br>
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea type="mensaje" id="mensaje" name="mensaje" value="" placeholder="Mensaje*"
+                            required=""></textarea><br>
+                            <br>
+                        <input type="submit" value="Enviar">
+                    </form>
+                </div>
+                <br>
+                <div class="contenido_right">
+                    <img class="imagen_pedidos" src="imagenes/cuencos_colores_varios.jpg" width="80px" height="80px">
+                </div>
+            </div>
+        </div>
+        <script src="validacion.js"></script>
     </div>
-    <div class="contenido_right"> 
-        <img class="imagen_pedidos" src="imagenes/cuencos_colores_varios.jpg" >
     </div>
-</div>
-    
 
+    <div class="productos3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat autem laudantium qui soluta aperiam dicta exercitationem repellendus nostrum obcaecati beatae sint maiores, magni corrupti iusto veniam eligendiit laborum animi deleniti eveniet hic, magnam, alias illo voluptatibus incidunt dolore fugit voluptas, maiores impedit fuga.</div>
 
-    <script src="validacion.js"></script>
+    <!-- Contenido del footer-->
+    <div class="footer1">
+        <footer>
+            <div style="text-align: center;">
+                <h4>CONTACTANOS</h4> <br> Tenemos abierto de 9 a 21 hs!
+                <br>
+                No dudes en
+                consultarnos!<br>011-156423825<br>arte-taller@gmail.com
+            </div>
+    </div>
+    <div class="footer1">
+        <div style="text-align: center;">
+            <h4>SIGUENOS EN NUESTRAS REDES SOCIALES</h4>
+            <img src="icon/Instagram.jpg" width="40" height="40" alt=Instagram style="border-radius: 10px;">
+            <img src="icon/Facebook.jpg" width="40" height="40" alt=Facebook style="border-radius: 4px
+                   ;">
+            <h4>MEDIOS DE PAGO</h4>
+            <img src="icon/visa@2x.png" width="35" height="35" alt=Visa style="border-radius: 10px;">
+            <img src="icon/mastercard@2x.png" width="35" height="35" alt=Mastercard style="border-radius: 4px
+                   ;">
+            <img src="icon/amex@2x.png" width="35" height="35" alt=AmericanExpress style="border-radius: 4px
+                   ;">
+        </div>
+    </div>
+    <div class="footer1" style="text-align: center;">
+        <h4>DONDE ESTAMOS</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d410.42005574900935!2d-58.43476578334809!3d-34.62033051676222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca45d5bedcd5%3A0xf66857055fe00a2f!2sArte%20Taller!5e0!3m2!1ses-419!2sar!4v1681609197932!5m2!1ses-419!2sar"
+            width="170" height="130"> </iframe>
+    </div>
+    </footer>
+    </div>
 </body>
 
 </html>
