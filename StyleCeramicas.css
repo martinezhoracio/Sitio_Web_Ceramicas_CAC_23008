@@ -1,0 +1,191 @@
+/*HOJA DE ESTILOS*/
+
+/*Fuente para toda la página*/
+
+
+/*Empieza el estilo de la pagina index*/
+/*Definimos el contenedor grid*/
+/*Esta es la configuración para dispositivos de mayor tamaño*/
+.contenedor1 {
+    display: grid;
+    grid-template: 230px 50px 180px 180px 180px 30px / 1fr 1fr 1fr;
+    gap: 3px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+}
+
+.header1 {
+    background-color: rgb(219, 216, 216);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.panel1 {
+    background-color: rgb(156, 206, 210);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    border-radius: 3px;
+}
+
+.productos1 {
+    grid-area: 3 / 1 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos2 {
+    grid-area: 3 / 2 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos3 {
+    grid-area: 3 / 3 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos4 {
+    grid-area: 4 / 1 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos5 {
+    grid-area: 4 / 2 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos6 {
+    grid-area: 4 / 3 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos7 {
+    grid-area: 5 / 1 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos8 {
+    grid-area: 5 / 2 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.productos9 {
+    grid-area: 5 / 3 / span 3 / span 1;
+    border-radius: 3px;
+    text-align: center;
+}
+.footer1 {
+    background-color: rgb(173, 178, 180);
+    border-radius: 3px;
+}
+
+
+/* Empieza estilo de la barra de navegación*/
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: rgb(10, 10, 11);
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: white;
+}
+
+#menuToggle input {
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 20px;
+    height: 3px;
+    margin-bottom: 5px;
+    position: relative;
+    background: rgb(14, 15, 15);
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: rgb(156, 206, 210);
+    border-radius: 8px;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+#menuToggle input:checked~ul {
+    transform: none;
+}
+
+//
