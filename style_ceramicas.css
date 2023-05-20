@@ -1,0 +1,67 @@
+/*HOJA DE ESTILOS*/
+
+/*Fuente para toda la página*/
+
+
+/*Empieza el estilo de la pagina index*/
+/*Definimos el contenedor grid*/
+/*Esta es la configuración para dispositivos de mayor tamaño*/
+
+
+
+.contenedor1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    background-color: antiquewhite;
+    border-radius: 3px;
+    border: 1px solid black;
+    grid-auto-rows: 650px;
+
+
+}
+
+.contenedor1 > div{
+    background-color: blanchedalmond;
+    border: 1px solid black;
+    text-align: center;
+    padding: auto;
+    
+}
+
+.gallery_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.productos{
+    position: relative;
+}
+.item_title{
+position: absolute;
+bottom: 0;
+color: aliceblue;
+background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+width: 100%;
+margin: 0;
+
+
+}
+
+
+
+@media (max-width:1000px) {
+    .contenedor1{
+        grid-template-columns: 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (max-width:600px) {
+    .contenedor1{
+        grid-template-columns: 1fr  ;
+    }
+}
+
+
+

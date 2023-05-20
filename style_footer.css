@@ -1,0 +1,13 @@
+
+
+.contenedor_footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer1 {
+    background-color: rgb(173, 178, 180);
+    border-radius: 3px;
+}
+
+
