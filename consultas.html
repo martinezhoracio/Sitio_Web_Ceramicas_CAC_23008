@@ -29,94 +29,69 @@
       </div>
 </header>
 
-  <!-- ########################
-      cuerpo de la pagina de consultas
-        #################################-->
-    
-        <!-- EncabezadoContenido de las ceramicas a la venta-->
+<div class="contenedor-consultas">
+    <div class="contenido-consultas">
+        <form class="form"  onsubmit="return validarFormulario()">
+            <h2 class="form_title">Deja tu consulta</h2>
+            <!-- <p class="form_paragraph">aun no tienes? <a href="#" class="form_link">entra Aqui</a></p> -->
+        
+            <div class="form_container">
+                <div class="form_group">
+                    <input type="text" id="nombre" name="nombre" class="form_input" placeholder=" ">
+                    <label for="nombre" class="form_label">Nombre</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="tel" id="telefono" name="telefono" class="form_input" placeholder=" ">
+                    <label for="telefono" class="form_label">Telefono</label>
+                    <span class="form_line"></span>
+                </div>
+                <div class="form_group">
+                    <input type="email" id="mail" name="mail" class="form_input" placeholder=" ">
+                    <label for="mail" class="form_label">Mail</label>
+                    <span class="form_line"></span>
+                </div>
 
-        <div id="encabezado_descripcion">
-            <h1>Formulario de consultas</h1>
-
-            <p>Si necesitas resolver cualquier tipo de duda, quieres conocer mejor las características de fabricación o
-                eres una empresa que desea contar con nuestros productos al por mayor, ponte en contacto con nosotros.
-                Damos una solución a medida a todas tus necesidades.</p>
-        </div>
-
-        <!-- #########################################################-->
-    
-      
-
-            <div class="form_and_pic" >
-                <div class="contenido_form" >
-                    <form id="formulario" onsubmit="return validarFormulario()">
-                        <!-- ################################################################-->
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" value="" placeholder="Mengano*" required="">
-                        <!-- ||tipo de dato||id vincula el contenido con el for del label,id para CSS || name es nombre del atributo, todos distintos||value me deja precargar datos en el campo|| required determida si podemos dejar sin rellenar ese campo-->
-                        <br>
-                        <br>
-                        <!--################################################################ -->
-                        <label for="telefono">Telefono:</label>
-                        <input type="tel" id="telefono" name="telefono" value="" placeholder="11 1111 1111*"
-                            required="">
-                        <br>
-                        <br>
-                        <!--################################################################ -->
-                        <label for="mail">Email:</label>
-
-                        <input type="email" id="mail" name="mail" value="" placeholder="nombre@email.com*" required="">
-                        <br>
-                        <br>
-
-                        <br>
-                        <!-- ##################################################################-->
-                        <label for="mensaje">Mensaje:</label>
+                <div class="form_group">
+                        <label for="mensaje" class="form_label_textarea">Mensaje</label>
                         <textarea type="mensaje"
                             title="Deja tu consulta para cualquiera de nuestros productos o servicios" id="mensaje"
-                            name="mensaje" placeholder="Mensaje*" required=""></textarea>
-                        <br>
-                        <br>
-                        <!--################################################################## -->
-                        <input type="submit" value="Enviar">
-
-                    </form>
-                    <div>
-                       
-
-                    </div>
-                    
-                <div>
-                    <h1>Quienes somos..</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam accusantium et quia, unde adipisci inventore architecto hic quaerat id tempore, sequi eum tempora commodi recusandae obcaecati, rem vitae molestias iusto. Expedita maiores maxime id, delectus dolorum ad possimus cumque quasi iure voluptatem, perferendis error repellat illo dicta laboriosam voluptas dignissimos.</p>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos, quas ipsa dignissimos numquam molestiae neque ex harum esse fuga? Totam illo voluptas sed vitae consequatur possimus harum voluptate molestiae corrupti ut, suscipit tempora voluptates sequi doloremque dignissimos. Explicabo deserunt excepturi debitis ut eligendi recusandae officiis dolore saepe quae distinctio eos, ad quod, consequuntur tempore fuga! Cupiditate eius magni dolore aliquid nostrum sapiente, exercitationem eos incidunt obcaecati architecto? Labore, ipsum animi libero quas nostrum eius consectetur fugiat est commodi repellendus, accusamus, ducimus ea iure iusto similique sunt possimus fuga amet veniam illo sit rem earum. Ratione consequuntur neque voluptatum reprehenderit quia!</p>
+                            name="mensaje" placeholder=" " required=""></textarea>
                 </div>
-
-                </div>
-                <br>
-                
-
-                <div class="contenido_imagen">
-                    <img class="imagen_pedidos" src="imagenes/vitrofusion_1.jpg" width="600"  >
-                </div>
-
+                <input type="submit" class="form_submit boton" value="Enviar">
             </div>
-       
-
- 
-    
-
-    
-    <div id="pie_consultas">
-        <p>ipsum dolor sit amet consectetur adipisicing elit.    Placeat autem laudantium qui soluta
-            aperiam dicta exercitationem repellendus nostrum obcaecati beatae sint maiores, magni corrupti iusto
-            veniam
-            eligendiit laborum animi deleniti eveniet hic, magnam, alias illo voluptatibus incidunt dolore fugit
-            voluptas,
-            maiores impedit fuga.
-        </p>
-
+        
+        
+        
+        </form>
     </div>
+    <div class="contenido-consultas">
+        <img src="imagenes/vitrofusion_1.jpg" alt="bandejitas_peces" class="consultas-img"
+        >
+    </div>
+    <div class="contenido-consultas">
+        <h3>Quienes somos</h3>
+        <br>
+        <h4>Miriam Perlmutter Profesora de escultura y pintura egresada La Escuela Superior de Bellas Artes Ernesto de la Cárcova. </h4> 
+            <br><br>
+            <p>
+             En Arte Taller Caballito desde hace más 20 años se dictan cursos de pintura en distintas superficies y con diferentes medios, también pátinas, collage, decoupage, vitrofusion, cermica y modelado. No se necesitan conocimientos previos.
+             
+            A través de este espacio quiero mostrarles parte de mis trabajos.
+            Es tu taller, es tu ámbito Cultural, es tu lugar de reunión, de intercambio y espacio de expresion. 
+             Nuestro  objetivo es fomentar,   difundir   y   promover  la creación   artística  a  través  de  las  Artes   Visuales.  
+            <br><br>
+             Tambien se realizan trabajos a pedido trabajos a pedido, vitrales, vajilla personalizada, ceramicas funcionales, souveniers.
+
+            <br><br>
+            Espero que les guste !!!
+Te invito a que visites la página! Si quieren saber algo mas pueden dejarme un mensaje y con gusto les responderé.
+        </p>
+    </div>
+
+
+</div>
+<script src="validacion.js"></script>
     <!-- ##################################
         Contenido del footer
     #####################################-->
