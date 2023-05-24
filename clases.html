@@ -11,23 +11,70 @@
     <link href="topnav.css" rel="stylesheet">
      <link href="style_footer.css" rel="stylesheet">
      <link href="style_clases.css" rel="stylesheet">
-     <link href="style_general.css" rel="stylesheet">
 
    
   
 </head>
 <body>
   <header>
-    <div class="topnav">
+    <div class="topnav" id="mytopnav">
     
         <a class="active" href="index.html">Inicio</a>
         <a href="consultas.html">Consultas</a>
         <a href="ceramicas.html">Ceramicas</a>
         <a href="clases.html">Clases</a>
+        <!-- la clase icon se usa para abrir y cerrar la barra de navegacion en los celulares  aca le paso la funcion en el archivo de javascript-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
       </div>
 </header>
 
+<div class="container">
+<ul class="slider">
+    <h4>Taller de Ceramicas y Esculturas </h4>
+    <h5> Niveles Principiantes y avanzados</h5>
+    <li id="taller1">
+        <img src="imagenes/taller_1.jpg"/>
+        <p> En el taller general se dictan clases de ceramica pintura y escultura </p>
+        <p> Cursos de Ceramica Inicial, el objetivo es que puedas concretar tus primeras piezas de ceramica Vas a aprender que herramientas y materiales son necesarios y todas las técnicas de modelado a mano. Te acompañamos a realizar tus primeras piezas. </p>
+    </li>
+    <li id="taller2">
+        <img src="imagenes/taller_2.jpg"/>
+        <p>Te acompañamos en tus creaciones y diseños</p>
+    </li>
+    <li id="taller3">
+        <img src="imagenes/taller_resinas_1.jpg"/>
+        <p> Podes tambien tomar clases de resinas </p>
+        <p> Vas a aprender a trabajar la resina al agua </p>
+        <p> Construccion de piezas decorativas de resina con moldes, cortantes y moldeadas a mano </p>
+        <p> Cómo texturizar las piezas </p>
+    </li>
+    <li id="taller4">
+        <img src="imagenes/vitrofusion_1.jpg"/>
+        <p> El objetivo de esta técnica es aprender a utilizar vidrio nuevo y a reciclar vidrios de descarte, así como también botellas y frascos</p>
+        <p> Corte de vidrio. Limpieza. Esmaltado y sus diferentes técnicas. Pegado para mandar las piezas al horno. Compatibilidad con otros vidrios. Uso de vidrios importados, metales, inclusiones. Caída libre. Recibir las piezas del horno. Armado del llamador de ángeles, tutores y bijouterie. </p>
+        
+    </li>
+</ul>
+<!-- aca hago los botones del menu  -->
+<ul class="menu">
+<li>
+    <a href="taller1">1</a>
+</li>
 
+<li>
+    <a href="taller2">2</a>
+</li>
+<li>
+    <a href="taller3">3</a>
+</li>
+<li>
+    <a href="taller4">4</a>
+</li>
+</ul>
+
+
+</div>
 
 
 
