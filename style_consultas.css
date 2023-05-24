@@ -1,22 +1,6 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #d8d8ec;
-    padding: 10px 4px 0px;
-    background-image: radial-gradient(#cfb9eb 0.45px, #d8d8ec 0.45px);
-    background-size: 9px 9px;
-}
 /*######################  style grid ###################*/
 .contenedor-consultas{
     display: grid;
