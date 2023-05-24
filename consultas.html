@@ -145,5 +145,32 @@ Te invito a que visites la página! Si quieren saber algo mas pueden dejarme un 
        
       </footer>   
 </body>
+<script>
+    //api clima
+let temperature = document.querySelector(".temp")
+let summary = document.querySelector(".summary")
+let loc = document.querySelector(".location")
+let humidity = document.querySelector(".humidity")
+const kelvin = 273.15;
+window.addEventListener("load", () => {
 
+    //coordenadas de arte-taller
+    //-34.620168660887856, -58.43442489815037
+
+    const api_id = "970abae88baed6afb4440fe664f06826";
+    const url_base = "https://api.openweathermap.org/data/2.5/weather?lat=-34.620168660887856&lon=-58.43442489815037&appid=970abae88baed6afb4440fe664f06826&lang=es";
+
+    fetch(url_base)
+        .then((response) => {
+            return response.json();
+        })
+        .then((data) => {
+            console.log(data)
+            temperature.textContent = Math.floor(data.main.temp - kelvin) + "°C";
+            summary.textContent = data.weather[0].description;
+            humidity.textContent = "Humedad " + data.main.humidity + "%"
+            loc.textContent = data.name + ", " + data.sys.country;
+        });
+});
+</script>
 </html>
