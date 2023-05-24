@@ -1,0 +1,78 @@
+
+body{
+background-color: antiquewhite;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+p{color: blueviolet;text-decoration: none;}
+h4{color: blueviolet;text-decoration: none;}
+h5{color: blueviolet;text-decoration: none;}
+
+
+.container{
+    margin: auto;
+    background-color: white;
+    width: 800px;
+    padding: 30px;
+}
+/* le saco el puntito a las listas que no me gusta  */
+ul, li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+ul.slider{
+    position: relative;
+    width: 800px;
+    height:300px;    
+}
+/* aca todos los elementos estan uno encima del otro  */
+ul.slider li{
+    position: absolute;left: 0;top: 0;
+    opacity: 0;
+    /* aca heredanel para el ancho y alto el tamano del padre  */
+    width: inherit;
+    height: inherit;
+    background-color: aliceblue;
+    /* aca agrego una pequeña trancision de cuando cambie de los elementos del li */
+    transition: opacity 0.5s;
+}
+ul.slider li img{
+   max-width: 100%;
+    height:300px;
+    object-fit: cover;
+    /* aca se ajusta la imagen y no se deforma */
+}
+
+/* aca edito solo el primer hijo de esta lista  */
+ul.slider li:first-child{
+opacity: 1;
+}
+
+ul.slider li:target{
+opacity:1
+}
+
+.menu{text-align: center;
+margin: 20px;
+}
+
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+display: inline-block;
+color: white;
+text-decoration: none;
+background-color: grey;
+padding: 10px;
+width: 20px;
+height: 20px;
+font-size: 20px;
+border-radius: 100%;
+}

@@ -1,131 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clases</title>
-    <link rel="icon" href="icon/Logo.png">
-     <!-- en teoria aca estan los iconos de facebook y twitter etc y los saco de aca gratis -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="icon/Logoprincipal.png">
+    <title>CLASES</title>
+    <link rel="stylesheet" href="style_clases.css">
     <link href="topnav.css" rel="stylesheet">
-     <link href="style_footer.css" rel="stylesheet">
-     <link href="style_clases.css" rel="stylesheet">
-
-   
-  
+    <link href="style_footer.css" rel="stylesheet">
+    <link href="style_general.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
-    <div class="topnav" id="mytopnav">
+   
+
+        <!-- Contenido del header-->
+
+        <header>
+            <div class="topnav">
+            
+                <a class="active" href="index.html">Inicio</a>
+                <a href="consultas.html">Consultas</a>
+                <a href="ceramicas.html">Ceramicas</a>
+                <a href="clases.html">Clases</a>
+              </div>
+        </header>
+
+
+        <div class="contenedor">
+            <div class="slider-contenedor">
+                <section class="contenido-slider">
+                    <div>
+                        <h2>En el taller de Vitrofusión podras realizar objetos utilitarios, decorativos, arquitectoonicos, esculturas, joyeria , etc.</h2>
+                       
+                    </div>
+                    <img src="imagenes/miriam_2.jpg" alt="">
     
-        <a class="active" href="index.html">Inicio</a>
-        <a href="consultas.html">Consultas</a>
-        <a href="ceramicas.html">Ceramicas</a>
-        <a href="clases.html">Clases</a>
-        <!-- la clase icon se usa para abrir y cerrar la barra de navegacion en los celulares  aca le paso la funcion en el archivo de javascript-->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-      </div>
-</header>
-
-<div class="container">
-<ul class="slider">
-    <h4>Taller de Ceramicas y Esculturas </h4>
-    <h5> Niveles Principiantes y avanzados</h5>
-    <li id="taller1">
-        <img src="imagenes/taller_1.jpg"/>
-        <p> En el taller general se dictan clases de ceramica pintura y escultura </p>
-        <p> Cursos de Ceramica Inicial, el objetivo es que puedas concretar tus primeras piezas de ceramica Vas a aprender que herramientas y materiales son necesarios y todas las técnicas de modelado a mano. Te acompañamos a realizar tus primeras piezas. </p>
-    </li>
-    <li id="taller2">
-        <img src="imagenes/taller_2.jpg"/>
-        <p>Te acompañamos en tus creaciones y diseños</p>
-    </li>
-    <li id="taller3">
-        <img src="imagenes/taller_resinas_1.jpg"/>
-        <p> Podes tambien tomar clases de resinas </p>
-        <p> Vas a aprender a trabajar la resina al agua </p>
-        <p> Construccion de piezas decorativas de resina con moldes, cortantes y moldeadas a mano </p>
-        <p> Cómo texturizar las piezas </p>
-    </li>
-    <li id="taller4">
-        <img src="imagenes/vitrofusion_1.jpg"/>
-        <p> El objetivo de esta técnica es aprender a utilizar vidrio nuevo y a reciclar vidrios de descarte, así como también botellas y frascos</p>
-        <p> Corte de vidrio. Limpieza. Esmaltado y sus diferentes técnicas. Pegado para mandar las piezas al horno. Compatibilidad con otros vidrios. Uso de vidrios importados, metales, inclusiones. Caída libre. Recibir las piezas del horno. Armado del llamador de ángeles, tutores y bijouterie. </p>
-        
-    </li>
-</ul>
-<!-- aca hago los botones del menu  -->
-<ul class="menu">
-<li>
-    <a href="taller1">1</a>
-</li>
-
-<li>
-    <a href="taller2">2</a>
-</li>
-<li>
-    <a href="taller3">3</a>
-</li>
-<li>
-    <a href="taller4">4</a>
-</li>
-</ul>
-
-
-</div>
-
-
-
-<footer>
-
-    <div class="contenedor_footer">
-        <div class="footer1">
-        
-            <div style="text-align: center;">
-                <h4>CONTACTANOS</h4> <br> Tenemos abierto de 9 a 21 hs!
-                <br>
-                No dudes en
-                consultarnos!<br>011-156423825<br>arte-taller@gmail.com
-            </div>
-        </div>
-  
-        <div class="footer1">
-            <div style="text-align: center;">
-                <h4>SIGUENOS EN NUESTRAS REDES SOCIALES</h4>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="icon/Instagram.jpg" width="20" height="20" alt=Instagram style="border-radius: 10px;">
-                </a>
-                <a href="https://www.facebook.com/" target="_blank">
-                <img src="icon/Facebook.jpg" width="20" height="20" alt=Facebook style="border-radius: 4px
-                ;">
-                </a>
-                <h4>MEDIOS DE PAGO</h4>
-                <img src="icon/visa@2x.png" width="20" height="20" alt=Visa style="border-radius: 10px;">
-                <img src="icon/mastercard@2x.png" width="20" height="20" alt=Mastercard style="border-radius: 4px
-                ;">
-                <img src="icon/amex@2x.png" width="20" height="20" alt=AmericanExpress style="border-radius: 4px
-                ;">
-            </div>
-        </div>
-  
-        <div class="footer1" style="text-align: center;">
-            <section class="clima">
-                <div class="temp">°C</div>
-                <div class="summary">----</div>
-                <div class="humidity">Humedad </div>
-                <div class="location">Lugar</div>
-                <script src="api_clima.js"></script>
-                
+                </section>
+                <section class="contenido-slider">
+                    <div>
+                        <h2>En el taller de Modelado  y Ceramica podras dar forma a en arcilla algun objeto que tengas en tu mente o reproducir con un molde cualquier objeto que desees.</h2>
+                        
+                    </div>
+                    <img src="imagenes/taller_2.jpg" alt="">
+    
+                </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Taller Resinas consiste en la construcción de moldes de todo tipo, tanto rígidos como flexibles, en RESINA POLIESTER. </h2>
+                   
+                </div>
+                <img src="imagenes/taller_resinas_2.jpg" alt="">
+    
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>En el taller de Vitrofusión podras realizar objetos utilitarios, decorativos, arquitectoonicos, esculturas, joyeria , etc.</h2>
+                    
+                </div>
+                <img src="animacion.svg" alt="">
+    
             </section>
         </div>
-  
-        
-    </div>
-  
+        </div>
    
-  </footer>      
+        <!-- Contenido del footer-->
+
+        <footer>
+
+            <div class="contenedor_footer">
+                <div class="footer1">
+                
+                    <div style="text-align: center;">
+                        <h4>CONTACTANOS</h4> <br> Tenemos abierto de 9 a 21 hs!
+                        <br>
+                        No dudes en
+                        consultarnos!<br>011-156423825<br>arte-taller@gmail.com
+                    </div>
+                </div>
+          
+                <div class="footer1">
+                    <div style="text-align: center;">
+                        <h4>SIGUENOS EN NUESTRAS REDES SOCIALES</h4>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="icon/Instagram.jpg" width="20" height="20" alt=Instagram style="border-radius: 10px;">
+                        </a>
+                        <a href="https://www.facebook.com/" target="_blank">
+                        <img src="icon/Facebook.jpg" width="20" height="20" alt=Facebook style="border-radius: 4px
+                        ;">
+                        </a>
+                        <h4>MEDIOS DE PAGO</h4>
+                        <img src="icon/visa@2x.png" width="20" height="20" alt=Visa style="border-radius: 10px;">
+                        <img src="icon/mastercard@2x.png" width="20" height="20" alt=Mastercard style="border-radius: 4px
+                        ;">
+                        <img src="icon/amex@2x.png" width="20" height="20" alt=AmericanExpress style="border-radius: 4px
+                        ;">
+                    </div>
+                </div>
+          
+                <div class="footer1" style="text-align: center;">
+                    <section class="clima">
+                        <div class="temp">°C</div>
+                        <div class="summary">----</div>
+                        <div class="humidity">Humedad </div>
+                        <div class="location">Lugar</div>
+                        <script src="api_clima.js"></script>
+                        
+                    </section>
+                </div>
+          
+                
+            </div>
+          
+           
+          </footer>   
+          <script src="slider.js"></script>
 </body>
 <script>
     //api clima
